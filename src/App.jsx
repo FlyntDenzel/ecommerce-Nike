@@ -1,7 +1,14 @@
-export default function App() {
+import React from 'react'
+
+const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <main className='relative'>
+      Nav
+      <section className='xl:padding-1 wide:padding-r padding-b'>
+
+      </section>
+    </main>
   )
 }
+
+export default App
