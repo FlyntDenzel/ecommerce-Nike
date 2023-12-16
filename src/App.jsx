@@ -9,6 +9,7 @@ const App = () => {
           <Hero />
         </section>
         <section className="padding">
+          {/* add product detail page later on */}
           <PopularProducts />
         </section>
         <section className="padding">
