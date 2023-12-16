@@ -6,7 +6,7 @@ import ShoeCard from "../components/ShoeCard"
 import { useState } from "react"
 
 const Hero = () => {
-  const [image, setImage] = useState()
+  const [bigShoeImg, SetbigShoeImg] = useState(bigShoe1);
 
   return (
     <section id="home" className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container">
@@ -30,15 +30,15 @@ const Hero = () => {
       </div>
 
       <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary  bg-cover bg-center">
-        <img src={bigShoe1} alt="shoe collection" width={610} height={500} className="object-contain relative z-10" />
+        <img src={bigShoeImg} alt="shoe collection" width={610} height={500} className="object-contain relative z-10" />
 
         <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">
             {shoes.map((shoe, index) => (
               <div key={index}>
                 <ShoeCard  
                   imgURL={shoe}
-                  changeBigShoeImage={() => {}}
-                  bigShoeImage =""
+                  changeBigShoeImage={(shoe) => SetbigShoeImg(shoe)}
+                  bigShoeImage ="bigShoeImg"
                   />
               </div>
             ))}
