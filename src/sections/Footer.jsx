@@ -41,7 +41,7 @@ const Footer = () => {
              <img src={copyrightSign} alt="copyright" width={20} height={20} className="rounded-full m-0" />
              <p>Copyrights. All right reserved</p>
           </div>
-          <p className=" font-montserrat cursor-pointer">Made by FlyntDenzel</p>
+          <p className=" font-montserrat cursor-pointer">Made by FlyntDenzel &#128126;</p>
       </div>
     </footer>
   )
